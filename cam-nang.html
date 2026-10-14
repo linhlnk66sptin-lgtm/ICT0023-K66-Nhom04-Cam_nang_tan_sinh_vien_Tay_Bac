@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cẩm nang giúp tân sinh viên Đại học Tây Bắc nắm các việc cần làm khi nhập học.">
+    <title>Cẩm nang | Cẩm nang Tân sinh viên</title>
+</head>
+<body>
+    <header>
+        <h2>Cẩm nang Tân sinh viên</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="cam-nang.html">Cẩm nang</a></li>
+                <li><a href="cong-cu.html">Công cụ</a></li>
+                <li><a href="hoi-dap.html">Hỏi đáp</a></li>
+                <li><a href="lien-he.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr> 
+    <main id="main">
+        <section>
+            <h1>Cẩm nang theo nhóm nhu cầu</h1>
+            <p>Chọn nhóm để lọc hoặc gõ từ khóa để tìm nhanh.</p>
+            <div>
+                <label for="guide-search">Tìm trong cẩm nang: </label>
+                <input id="guide-search" type="search" placeholder="Ví dụ: học bổng">
+                
+                <p>Lọc theo nhóm:</p>
+                <button>Tất cả</button>
+                <button>Thủ tục</button>
+                <button>Học vụ</button>
+                <button>Học bổng</button>
+                <button>Ký túc xá</button>
+                <button>Đời sống</button>
+            </div>
+            <br>
+            <p>Hiển thị 2/8 mục (Dữ liệu tĩnh)</p>
+            <div id="guide-list">
+                <!-- Thẻ bài viết 1 -->
+                <article>
+                    <span><strong>Thủ tục</strong></span>
+                    <h3>Chuẩn bị hồ sơ nhập học</h3>
+                    <p>Danh sách giấy tờ cần mang theo khi nhập học.</p>
+                    <button>Xem chi tiết</button>
+                </article>
+                <br>
+                <article>
+                    <span><strong>Học bổng</strong></span>
+                    <h3>Các loại học bổng thường gặp</h3>
+                    <p>Học bổng khuyến khích học tập và hỗ trợ khác.</p>
+                    <button>Xem chi tiết</button>
+                </article>
+            </div>
+            <br>
+            <p><em>(Thông báo lỗi: Không tìm thấy mục phù hợp. Hãy thử từ khóa khác hoặc chọn “Tất cả”.)</em></p>
+            <button type="button">Đặt lại bộ lọc</button>
+        </section>
+        <hr>
+        <section id="guideModal">
+            <h2>[Khung xem chi tiết bài viết]</h2>
+            <h3 id="guideModalTitle">Tiêu đề bài viết sẽ.</h3>
+            <p id="guideModalBody">Nội dung chi tiết.</p>
+            <button type="button">Đóng</button>
+        </section>
+
+    </main>
+    <hr>
+    <footer>
+        <p><strong>Cẩm nang Tân sinh viên Đại học Tây Bắc</strong> — sản phẩm học tập môn ICT0023, lớp K66, Nhóm 04.</p>
+        <p>Nội dung mang tính tham khảo, hãy đối chiếu thông báo chính thức của nhà trường. </p>
+    </footer>
+</body>
+</html>
