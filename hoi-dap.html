@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cẩm nang giúp tân sinh viên Đại học Tây Bắc nắm các việc cần làm khi nhập học.">
+    <title>Hỏi đáp | Cẩm nang Tân sinh viên</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=EB+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hoi-dap.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+    <header>
+        <nav class="navbar navbar-expand-lg site-nav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    Cẩm nang Tân sinh viên
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Mở menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="cam-nang.html">Cẩm nang</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="cong-cu.html">Công cụ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="hoi-dap.html" aria-current="page">
+                                Hỏi đáp
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="lien-he.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">CẨM NANG TÂN SINH VIÊN</p>
+                <h1>Hỏi đáp nhanh</h1>
+                <p class="lead">
+                    Giải đáp những thắc mắc thường gặp trong quá trình nhập học
+                    và học tập tại Trường Đại học Tây Bắc.
+                </p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h2 class="mb-3">Bạn đang thắc mắc điều gì?</h2>
+                        <label for="faq-search" class="form-label">
+                            Tìm câu hỏi
+                        </label>
+                        <input
+                            id="faq-search"
+                            class="form-control mb-3"
+                            type="search"
+                            placeholder="Ví dụ: thẻ sinh viên, học phí, ký túc xá..."
+                            autocomplete="off"
+                        >
+                        <p
+                            id="faq-count"
+                            class="small text-muted-fg"
+                            aria-live="polite"
+                        ></p>
+                        <div class="accordion" id="faq-list"></div>
+                        <div
+                            id="faq-empty"
+                            class="alert alert-warning d-none mt-3"
+                            role="status"
+                        >
+                            Chưa có câu trả lời phù hợp.
+                            Bạn có thể
+                            <a href="lien-he.html">gửi câu hỏi cho nhóm</a>.
+                        </div>
+                        <div class="card mt-4 p-4">
+                            <h3>Bạn vẫn chưa tìm được câu trả lời?</h3>
+                            <p>
+                                Nếu có thắc mắc khác về việc nhập học hoặc
+                                cuộc sống sinh viên, hãy liên hệ với nhóm
+                                để được hỗ trợ.
+                            </p>
+                            <div>
+                                <a href="lien-he.html" class="btn btn-primary">
+                                    Gửi câu hỏi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p class="mb-1">
+                <strong>Cẩm nang Tân sinh viên Đại học Tây Bắc</strong>
+                — sản phẩm học tập môn ICT0023, lớp K66, Nhóm 04.
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/hoi-dap.js"></script>
+</body>
+</html>
