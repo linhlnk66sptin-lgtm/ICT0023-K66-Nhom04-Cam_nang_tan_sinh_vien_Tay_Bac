@@ -1,0 +1,30 @@
+.hero-banner-common {
+    background: linear-gradient(
+        135deg,
+        rgba(30, 58, 95, .78),
+        rgba(15, 23, 42, .65)
+    ), url('../images/NenTrang.jpg') center / cover no-repeat;
+    border-bottom: 4px solid var(--color-accent);
+    padding: 3rem 0;
+}
+.site-footer {
+    background-color: #16294A;
+    color: #DCE6F5;
+    padding: 2rem 0 30px;
+    margin-top: 2rem;
+}
+.navbar-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .2));
+}
+html,
+body {
+    min-height: 100%;
+    margin-bottom: 0;
+}
+body {
+    background-color: #16294A;
+}
