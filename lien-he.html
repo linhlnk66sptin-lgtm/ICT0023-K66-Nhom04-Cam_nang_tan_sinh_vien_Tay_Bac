@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cẩm nang giúp tân sinh viên Đại học Tây Bắc nắm các việc cần làm khi nhập học.">
+    <title>Liên hệ | Cẩm nang Tân sinh viên</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=EB+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/lien-he.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+    <header>
+        <!-- Bỏ navbar-dark, chỉ giữ navbar-expand-lg và site-nav -->
+        <nav class="navbar navbar-expand-lg site-nav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/Logo.jpg" alt="Logo Đại học Tây Bắc" class="navbar-logo me-2">
+                    <span>Cẩm nang Tân sinh viên</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Mở menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cam-nang.html">Cẩm nang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cong-cu.html">Công cụ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hoi-dap.html">Hỏi đáp</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="lien-he.html" aria-current="page">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="hero-banner-common text-white py-4 ">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-12 col-lg-7">
+                        <h1>Gửi câu hỏi hoặc góp ý</h1>
+                        <form id="contact-form" novalidate>
+                            <div id="form-errors" class="alert alert-danger d-none" role="alert" tabindex="-1"></div>
+                            <div class="mb-3">
+                                <label for="f-name" class="form-label">Họ tên (có thể dùng biệt danh)</label>
+                                <input id="f-name" class="form-control" autocomplete="off">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="f-email" class="form-label">Email</label>
+                                <input id="f-email" type="email" class="form-control" autocomplete="off">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="f-topic" class="form-label">Chủ đề</label>
+                                <select id="f-topic" class="form-select">
+                                    <option value="">-- Chọn chủ đề --</option>
+                                    <option>Thủ tục nhập học</option>
+                                    <option>Học vụ - học bổng</option>
+                                    <option>Ký túc xá</option>
+                                    <option>Khác</option>
+                                </select>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="mb-1">
+                                <label for="f-msg" class="form-label">Nội dung (10–300 ký tự)</label>
+                                <textarea id="f-msg" class="form-control" rows="4"></textarea>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <p id="f-count" class="small text-muted-fg" aria-live="polite">Đã nhập 0/300 ký tự — chưa đủ tối thiểu 10.</p>
+                            <button class="btn btn-primary" type="submit">Gửi (xem trước)</button>
+                            <button id="f-sample" class="btn btn-accent" type="button">Dùng thử</button>
+                            <button class="btn btn-outline-primary" type="reset" id="f-reset">Đặt lại</button>
+                        </form>
+                        <p class="small text-muted-fg mt-3">Trang không có máy chủ: dữ liệu bạn nhập không được gửi đi hay lưu lại.</p>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="info-card">
+                            <h3>🎓 Khám phá cẩm nang</h3>
+                            <p>Đồng hành cùng bạn trong những bước đầu tiên tại giảng đường đại học!</p>
+                            <ul>
+                                <li>📚 Hướng dẫn nhập học</li>
+                                <li>🗓️ Lịch học và kế hoạch học tập</li>
+                                <li>🧭 Kinh nghiệm dành cho tân sinh viên</li>
+                                <li>💡 Công cụ và tiện ích hữu ích</li>
+                            </ul>
+                            <hr>
+                            <p><strong>💬 Bạn có góp ý?</strong></p>
+                            <p>Hãy gửi câu hỏi hoặc ý kiến để giúp cẩm nang ngày càng hoàn thiện hơn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal ... (đã rút gọn nhưng bạn giữ nguyên phần Modal ở HTML gốc) -->
+    </main>
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="mb-1"><strong>Cẩm nang Tân sinh viên Đại học Tây Bắc</strong> — sản phẩm học tập môn ICT0023, lớp K66, Nhóm 04.</p>
+            <p class="mb-0 small opacity-75">Nội dung mang tính tham khảo; hãy đối chiếu thông báo chính thức của nhà trường. Dữ liệu trên trang chỉ tồn tại trong phiên đang mở.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/lien-he.js"></script>
+</body>
+</html>
