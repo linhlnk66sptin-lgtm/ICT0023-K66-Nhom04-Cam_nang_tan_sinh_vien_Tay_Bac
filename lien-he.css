@@ -302,12 +302,10 @@ img {
         transition: none;
     }
 }
-/* Điều chỉnh khoảng cách giữa nội dung cuối trang và chân trang */
 body:has(.hero-banner-common) main {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
-
 body:has(.hero-banner-common) main > section:last-child {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
