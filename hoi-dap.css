@@ -1,0 +1,225 @@
+
+:root {
+    --primary: #1E3A5F;
+    --accent: #A16207;
+    --text: #0F172A;
+    --muted: #475569;
+    --border: #CBD5E1;
+    --font-head: "EB Garamond", Georgia, serif;
+    --font-body: "Be Vietnam Pro", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text);
+
+    background:
+        linear-gradient(
+            rgba(248, 250, 252, 0.55),
+            rgba(248, 250, 252, 0.65)
+        ),
+        url("../images/NenTrang.jpg") center / cover no-repeat fixed;
+}
+h1, h2, h3, .navbar-brand {
+    font-family: var(--font-head);
+}
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 2000;
+    padding: 0.5rem 1rem;
+    background: var(--accent);
+    color: white;
+}
+.skip-link:focus {
+    left: 0;
+}
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+.site-nav {
+    background: rgba(30, 58, 95, 0.98);
+    padding: 0.75rem 0;
+}
+.site-nav .navbar-brand {
+    color: white;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 700;
+}
+.navbar-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.site-nav .nav-link {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    color: #DCE6F5;
+    padding: 0.6rem 0.85rem;
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #F3D08A;
+    text-underline-offset: 6px;
+}
+.site-nav .navbar-toggler {
+    border-color: white;
+}
+
+.site-nav .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+.section {
+    padding: 3rem 0;
+}
+.hero-banner-common {
+    padding: clamp(3rem, 7vw, 6rem) 0;
+    color: white;
+    background: linear-gradient(
+        120deg,
+        rgba(17, 39, 69, 0.88),
+        rgba(30, 58, 95, 0.68)
+    );
+    border-bottom: 4px solid var(--accent);
+}
+.hero-banner-common .eyebrow {
+    color: #FFE0A3;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+.hero-banner-common .lead {
+    max-width: 48rem;
+    color: #F1F5F9;
+    line-height: 1.8;
+}
+.faq-content {
+    padding: clamp(1rem, 3vw, 2.5rem);
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.14);
+}
+.faq-content h2,
+.faq-content h3 {
+    color: var(--primary);
+}
+.form-label {
+    font-weight: 600;
+}
+.form-control {
+    min-height: 48px;
+    border-color: var(--border);
+    border-radius: 0.6rem;
+    font-family: var(--font-body);
+}
+.form-control:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+}
+#faq-count {
+    min-height: 1.5rem;
+    color: var(--muted);
+    font-size: 0.875rem;
+}
+#faq-list {
+    --bs-accordion-bg: white;
+    --bs-accordion-color: var(--text);
+    --bs-accordion-border-color: var(--border);
+    --bs-accordion-btn-color: var(--text);
+    --bs-accordion-active-bg: #E9EEF5;
+    --bs-accordion-active-color: var(--primary);
+}
+#faq-list .accordion-item {
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+    border-radius: 0.65rem;
+}
+#faq-list .accordion-button {
+    min-height: 52px;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+#faq-list .accordion-body {
+    line-height: 1.8;
+    color: var(--muted);
+}
+.contact-card {
+    background: #F8FAFC;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+}
+.contact-card p {
+    color: var(--muted);
+}
+.btn-primary {
+    min-height: 44px;
+    padding: 0.65rem 1.25rem;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+.btn-primary:hover {
+    background: #16294A;
+    border-color: #16294A;
+}
+.site-footer {
+    margin-top: 0;
+    padding: 2rem 0;
+    color: #DCE6F5;
+    background: rgba(22, 41, 74, 0.98);
+    border-top: 3px solid var(--accent);
+}
+.site-footer p {
+    line-height: 1.8;
+}
+@media (max-width: 991.98px) {
+    .site-nav .navbar-collapse {
+        padding-top: 0.75rem;
+    }
+}
+@media (max-width: 767.98px) {
+    body {
+        background-attachment: scroll;
+    }
+    .navbar-logo {
+        width: 34px;
+        height: 34px;
+    }
+    .hero-banner-common {
+        padding: 3rem 0;
+    }
+    .section {
+        padding: 2rem 0;
+    }
+    .faq-content {
+        padding: 1rem;
+    }
+    .site-footer {
+        padding: 1.5rem 0;
+        font-size: 0.85rem;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
