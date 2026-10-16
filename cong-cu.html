@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Cẩm nang giúp tân sinh viên Đại học Tây Bắc nắm các việc cần làm khi nhập học.">
+        <title>Công cụ | Cẩm nang Tân sinh viên</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/cong-cu.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=EB+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+        <header>
+            <nav class="navbar navbar-expand-lg site-nav">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                     <img src="images/Logo.jpg" alt="Logo Đại học Tây Bắc" class="navbar-logo me-2">
+                      <span>Cẩm nang Tân sinh viên</span>
+                      </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Mở menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cam-nang.html">Cẩm nang</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="cong-cu.html" aria-current="page">Công cụ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hoi-dap.html">Hỏi đáp</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="lien-he.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <section class="section hero-banner-common">
+                <div class="container">
+                    <h1>Công cụ cho tân sinh viên</h1>
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="h4">Checklist thủ tục nhập học</h2>
+                                    <div class="progress mb-2" role="progressbar" aria-label="Tiến độ" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-wrap">
+                                        <div id="progress-bar" class="progress-bar" style="width:0%">0%</div>
+                                    </div>
+                                    <p id="progress-text" class="small" aria-live="polite"></p>
+                                    <ul id="checklist" class="list-unstyled"></ul>
+                                    <button id="check-sample" class="btn btn-accent btn-sm" type="button">Dùng thử</button>
+                                    <button id="check-reset" class="btn btn-outline-primary btn-sm" type="button">Đặt lại</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6" id="chi-phi">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="h4">Ước tính chi phí tháng đầu</h2>
+                                    <form id="cost-form" novalidate>
+                                        <div id="cost-errors" class="alert alert-danger d-none" role="alert" tabindex="-1"></div>
+                                        <div class="mb-2">
+                                            <label for="c-budget" class="form-label">Ngân sách tháng (VNĐ)</label>
+                                            <input id="c-budget" class="form-control" inputmode="numeric" data-name="Ngân sách">
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="c-dorm" class="form-label">Ký túc xá / nhà trọ</label>
+                                            <input id="c-dorm" class="form-control" inputmode="numeric" data-name="Tiền ở">
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="c-food" class="form-label">Ăn uống</label>
+                                            <input id="c-food" class="form-control" inputmode="numeric" data-name="Ăn uống">
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="c-book" class="form-label">Giáo trình, đồ dùng</label>
+                                            <input id="c-book" class="form-control" inputmode="numeric" data-name="Giáo trình">
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="c-other" class="form-label">Chi phí khác</label>
+                                            <input id="c-other" class="form-control" inputmode="numeric" data-name="Chi phí khác">
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                        <button class="btn btn-primary" type="submit">Tính</button>
+                                        <button id="cost-sample" class="btn btn-accent" type="button">Dùng thử</button>
+                                        <button id="cost-reset" class="btn btn-outline-primary" type="reset">Đặt lại</button>
+                                    </form>
+                                    <div id="cost-result" class="mt-3" aria-live="polite"></div>
+                                    <p class="small text-muted-fg mt-2">Kết quả chỉ mang tính tham khảo, không phải tư vấn tài chính.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+  <div class="container text-center">
+    <p class="mb-1">
+      <strong>Cẩm nang Tân sinh viên Đại học Tây Bắc</strong> — sản phẩm học tập môn ICT0023, lớp K66, Nhóm 04.
+     </p>
+     <p class="mb-0 small opacity-75">
+      Nội dung mang tính tham khảo; hãy đối chiếu thông báo chính thức của nhà trường. Dữ liệu trên trang chỉ tồn tại trong phiên đang mở.
+     </p>
+      </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/cong-cu.js"></script>
+    </body>
+</html>
