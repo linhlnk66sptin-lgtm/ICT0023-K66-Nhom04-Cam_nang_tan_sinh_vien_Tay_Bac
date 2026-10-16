@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap');
-/* màu sắc và typography*/
 :root {
     --color-primary: #1E3A5F;
     --color-on-primary: #FFFFFF;
@@ -24,8 +23,6 @@
 body {
   font-family: var(--font-body);
 }
-
-/* dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
         --color-primary: #9DB8DE;
@@ -41,7 +38,6 @@ body {
         --color-secondary: #7AA2F7;
     }
 }
-/*setting cơ bản*/
 html {
     scroll-behavior: smooth;
 }
@@ -83,7 +79,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-/* truy cập */
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -101,7 +96,6 @@ img {
     outline: 3px solid var(--color-accent);
     outline-offset: 3px;
 }
-/* 6. THANH ĐIỀU HƯỚNG */
 .site-nav {
     background: var(--color-primary);
 }
@@ -129,7 +123,6 @@ img {
 .site-nav .navbar-toggler:focus {
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
-/* hero banner */
 .hero {
     background: linear-gradient(135deg, #1E3A5F, #16294A);
     color: #FFFFFF;
@@ -170,7 +163,6 @@ img {
 .hero .btn {
     margin: 0 0 0.5rem;
 }
-/* ảnh hero và hiệu ứng đổi ảnh */
 .hero-img-wrapper {
     position: relative;
     width: 100%;
@@ -204,7 +196,6 @@ img {
 .hero-img-wrapper:hover .hero-img-hover {
     opacity: 1;
 }
-/* 9. CÁC PHẦN NỘI DUNG */
 .section {
     padding: var(--space-4) 0;
 }
@@ -226,7 +217,6 @@ img {
     margin: 0 auto 1.5rem;
     text-align: center;
 }
-/* 10. THẺ THÔNG TIN */
 .section .card {
     height: 100%;
     background: var(--color-card);
@@ -256,7 +246,6 @@ img {
     margin-top: auto;
     font-weight: 500;
 }
-/* thư viện ảnh */
 #gallery {
     max-width: 1100px;
     margin-left: auto;
@@ -284,7 +273,6 @@ img {
     font-size: 0.9rem;
     color: var(--color-muted-fg);
 }
-/* bảng thông tin */
 .section .table-responsive {
     width: 100%;
     max-width: 1000px;
@@ -302,7 +290,6 @@ img {
 .table caption {
     color: var(--color-muted-fg);
 }
-/* nút bấm */
 .btn {
     min-height: 44px;
     cursor: pointer;
@@ -350,7 +337,6 @@ img {
     flex-wrap: wrap;
     gap: 0.5rem;
 }
-/* biểu mẫu */
 .form-control,
 .form-select {
     background: var(--color-card);
@@ -377,7 +363,6 @@ img {
 .invalid-feedback {
     color: var(--color-destructive);
 }
-/*accordion và modal */
 .accordion {
     --bs-accordion-bg: var(--color-card);
     --bs-accordion-color: var(--color-fg);
@@ -395,7 +380,6 @@ img {
     color: var(--color-fg);
     border-color: var(--color-border);
 }
-/* checklist và thanh tiến độ */
 .progress {
     height: 1.5rem;
     background: var(--color-muted);
@@ -423,7 +407,6 @@ img {
     text-decoration: line-through;
     color: var(--color-muted-fg);
 }
-/* tag phân loại */
 .badge-tag {
     display: inline-block;
     font-size: 0.8rem;
@@ -433,7 +416,6 @@ img {
     color: var(--color-fg);
     margin-bottom: 0.5rem;
 }
-/* footer */
 .site-footer {
     background: #16294A;
     color: #DCE6F5;
@@ -446,13 +428,11 @@ img {
 .site-footer a:hover {
     color: #FFFFFF;
 }
-/* thông báo */
 .alert-warning {
     background: #FFF3CD;
     color: #664D03;
     border-color: #FFECB5;
 }
-/* responsive,tablet */
 @media (max-width: 991.98px) {
     .hero {
         padding: 3rem 0;
@@ -465,7 +445,6 @@ img {
         margin: 0 auto;
     }
 }
-/*cho đthoai */
 @media (max-width: 575.98px) {
     .hero {
         padding: 2.5rem 0;
@@ -493,7 +472,6 @@ img {
         font-size: 0.9rem;
     }
 }
-/* điều chỉnh dark mode */
 @media (prefers-color-scheme: dark) {
     .site-nav {
         background: #14213A;
@@ -530,7 +508,6 @@ img {
         color: #14213A;
     }
 }
-/* hạn chế chuyển động */
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
