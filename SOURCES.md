@@ -11,7 +11,8 @@ I.	Tài liệu tham khảo
 •	Nội dung tham khảo: Hệ thống lưới (Grid System), các thành phần UI (Navbar, Modal, Alert, Button, Form) và tiện ích (Flexbox, Spacing, Typography).
 •	Mục đích sử dụng: Xây dựng giao diện nhất quán, tương thích tốt trên mọi thiết bị (Responsive) và tối ưu thời gian lập trình.
 •	Phạm vi áp dụng: Triển khai bố cục, thanh điều hướng, bộ lọc tìm kiếm và hộp thoại chi tiết trên trang.
-II.	Mã nguồn tham khảo 3.1. Mã nguồn bên ngoài
+II.	Mã nguồn tham khảo 
+2.1. Mã nguồn bên ngoài
 •	Mã nguồn sao chép nguyên bản: Không sử dụng mã nguồn hoàn chỉnh từ các dự án bên ngoài làm sản phẩm của nhóm.
 •	Mã nguồn tham khảo trực tiếp: Không có mã nguồn bên ngoài được ghi nhận trong danh mục tại thời điểm lập tài liệu.
 •	Cách tiếp cận: Nhóm tự xây dựng và chỉnh sửa mã HTML, CSS, JavaScript dựa trên kiến thức đã học và tài liệu hướng dẫn kỹ thuật cùng với tham khảo một chút giao diện của các trang web trường.
