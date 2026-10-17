@@ -22,4 +22,4 @@ Website "Cẩm nang Tân sinh viên Đại học Tây Bắc" hỗ trợ các b�
 
 ## 4. HƯỚNG DẪN TRUY CẬP
 Mở trực tiếp file `index.html` trên trình duyệt hoặc truy cập qua GitHub Pages:
-`https://TEN-TAI-KHOAN.github.io/ICT0023-K66-Nhom04-CamNangTanSinhVien/`
+https://linhlnk66sptin-lgtm.github.io/ICT0023-K66-Nhom04-Cam_nang_tan_sinh_vien_Tay_Bac/
