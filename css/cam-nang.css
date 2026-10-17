@@ -27,17 +27,16 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #9DB8DE;
-    --color-on-primary: #0B1426;
-    --color-accent: #E0A93B;
-    --color-on-accent: #0B1426;
+    --color-primary: #38BDF8;       
+    --color-on-primary: #0F172A;    
+    --color-accent: #F59E0B;
+    --color-on-accent: #0F172A;
 
-    --color-bg: #0B1426;
-    --color-fg: #E8EEF7;
-    --color-card: #14213A;
-    --color-muted: #1B2B4A;
-    --color-muted-fg: #B6C3D9;
-    --color-border: #2E4166;
+    --color-bg: #0F172A;           
+    --color-card: #1E293B;         
+    --color-muted: #334155;
+    --color-muted-fg: #CBD5E1;     
+    --color-border: #475569;       
     --color-secondary: #7AA2F7;
   }
 }
@@ -319,33 +318,30 @@ img {
   border-bottom: 3px solid var(--color-accent);
 }
 #guide-list .card {
-  background: rgba(255, 255, 255, 0.85) !important; /* Nền trắng mờ 85% nhô lên khỏi ảnh nền */
+  background: var(--color-card);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 #guide-list .card:hover {
   transform: translateY(-6px);
-  background: rgba(255, 255, 255, 0.95) !important;
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3);
 }
 #guide-list .card-title {
-  color: #1E3A5F !important; 
+  color: var(--color-fg);
   font-weight: 700;
 }
-
 #guide-list .card-text {
-  color: #334155 !important; 
+  color: var(--color-muted-fg);
 }
 #guide-list .btn-outline-primary {
   border-radius: 8px;
   font-weight: 500;
   transition: all 0.2s;
 }
-
 #guide-filters .btn {
   border-radius: 50px;
   padding: 6px 16px;
