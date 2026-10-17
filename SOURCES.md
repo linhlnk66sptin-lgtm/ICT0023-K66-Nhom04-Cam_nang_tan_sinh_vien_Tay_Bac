@@ -1,6 +1,6 @@
 DANH MỤC NGUỒN & LIÊM CHÍNH HỌC THUẬT
 I.	Tài liệu tham khảo
-2.	1.1. W3Schools
+1.1. W3Schools
 •	Tên tài liệu: W3Schools – Online Web Tutorials.
 •	Địa chỉ: https://www.w3schools.com
 •	Nội dung tham khảo: Kiến thức cơ bản về HTML, CSS, JavaScript, jQuery và Bootstrap.
