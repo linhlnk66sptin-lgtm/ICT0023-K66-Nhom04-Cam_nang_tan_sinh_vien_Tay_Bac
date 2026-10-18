@@ -32,6 +32,7 @@ body {
     --color-accent: #F59E0B;
     --color-on-accent: #0F172A;
 
+     --color-fg: #0f172a;
     --color-bg: #0F172A;           
     --color-card: #1E293B;         
     --color-muted: #334155;
@@ -385,4 +386,30 @@ img {
   font-size: 0.8rem;
   font-weight: 600;
   color: #1E3A5F;
+}
+#guide-reset {
+  background: rgba(15, 23, 42, 0.55); 
+  color: #ffffff;                      
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  backdrop-filter: blur(10px);        
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+#guide-reset:hover {
+  background: rgba(15, 23, 42, 0.75);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fg: #ffffff;
+  }
+  #guide-list .card-title {
+    color: #ffffff !important;
+  }
+  #guide-list .card .badge,
+  #guide-list .card-category,
+  #guide-list .card div:first-child {
+    color: #38bdf8 !important;
+  }
 }
