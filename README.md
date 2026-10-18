@@ -21,5 +21,11 @@ Website "Cẩm nang Tân sinh viên Đại học Tây Bắc" hỗ trợ các b�
  Bài tập lớn ICT0023-K66-Nhom04-cam_nang_tan_sinh_vien_dai_hoc_tay_bac : Website dùng HTML, CSS , Javascript , Jquery , Bootstrap chạy trang web hoàn toàn trên trình duyệt
 
 ## 4. HƯỚNG DẪN TRUY CẬP
-Mở trực tiếp file `index.html` trên trình duyệt hoặc truy cập qua GitHub Pages:
-`https://TEN-TAI-KHOAN.github.io/ICT0023-K66-Nhom04-CamNangTanSinhVien/`
+Mở trực tiếp file `index.html` trên trình duyệt hoặc truy cập qua GitHub Pages:https://linhlnk66sptin-lgtm.github.io/ICT0023-K66-Nhom04-Cam_nang_tan_sinh_vien_Tay_Bac/
+- **Mã nguồn (GitHub Repository):**
+## 5. Kế hoạch phát triển và lưu mốc phiên bản (Tags)
+- `v0.1-y-tuong`: Hoàn thiện ý tưởng đề tài, tài liệu phân công nhiệm vụ và cấu trúc thư mục ban đầu.
+- `v0.2-html`: Hoàn thành bộ khung cấu trúc HTML cho 5 trang của website.
+- `v0.3-giao-dien`: Hoàn thiện giao diện responsive bằng CSS và hệ thống lưới Bootstrap 5.
+- `v0.4-tuong-tac`: Hoàn thiện các tính năng xử lý dữ liệu và công cụ tương tác bằng JavaScript/jQuery.
+- `v1.0-final`: Tối ưu mã nguồn, kiểm thử toàn diện trên trình duyệt và chuẩn bị báo cáo hoàn chỉnh.
