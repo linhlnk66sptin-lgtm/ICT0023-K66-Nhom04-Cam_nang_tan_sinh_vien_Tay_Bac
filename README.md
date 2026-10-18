@@ -23,7 +23,7 @@ Website "Cẩm nang Tân sinh viên Đại học Tây Bắc" hỗ trợ các b�
 ## 4. HƯỚNG DẪN TRUY CẬP
 Mở trực tiếp file `index.html` trên trình duyệt hoặc truy cập qua GitHub Pages:https://linhlnk66sptin-lgtm.github.io/ICT0023-K66-Nhom04-Cam_nang_tan_sinh_vien_Tay_Bac/
 - **Mã nguồn (GitHub Repository):**https://github.com/linhlnk66sptin-lgtm/ICT0023-K66-Nhom04-Cam_nang_tan_sinh_vien_Tay_Bac
-- - **Video Demo & Thuyết trình (YouTube Unlisted) :https://m.youtube.com/watchsi=6FMUOcHS4M170118&v=4zWc9OOWUQ0&feature=youtu.be
+- - **Video Demo & Thuyết trình (YouTube Unlisted) :https://m.youtube.com/watch?si=6FMUOcHS4M170118&v=4zWc9OOWUQ0&feature=youtu.be
 ## 5. Kế hoạch phát triển và lưu mốc phiên bản (Tags)
 - `v0.1-y-tuong`: Hoàn thiện ý tưởng đề tài, tài liệu phân công nhiệm vụ và cấu trúc thư mục ban đầu.
 - `v0.2-html`: Hoàn thành bộ khung cấu trúc HTML cho 5 trang của website.
