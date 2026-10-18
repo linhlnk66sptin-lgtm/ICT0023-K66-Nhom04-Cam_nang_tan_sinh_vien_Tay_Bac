@@ -16,7 +16,6 @@
 <body>
     <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
     <header>
-        <!-- Bỏ navbar-dark, chỉ giữ navbar-expand-lg và site-nav -->
         <nav class="navbar navbar-expand-lg site-nav">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -43,41 +42,74 @@
             <div class="container">
                 <div class="row g-4 align-items-start">
                     <div class="col-12 col-lg-7">
-                        <h1>Gửi câu hỏi hoặc góp ý</h1>
-                        <form id="contact-form" novalidate>
-                            <div id="form-errors" class="alert alert-danger d-none" role="alert" tabindex="-1"></div>
-                            <div class="mb-3">
-                                <label for="f-name" class="form-label">Họ tên (có thể dùng biệt danh)</label>
-                                <input id="f-name" class="form-control" autocomplete="off">
-                                <div class="invalid-feedback"></div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="f-email" class="form-label">Email</label>
-                                <input id="f-email" type="email" class="form-control" autocomplete="off">
-                                <div class="invalid-feedback"></div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="f-topic" class="form-label">Chủ đề</label>
-                                <select id="f-topic" class="form-select">
-                                    <option value="">-- Chọn chủ đề --</option>
-                                    <option>Thủ tục nhập học</option>
-                                    <option>Học vụ - học bổng</option>
-                                    <option>Ký túc xá</option>
-                                    <option>Khác</option>
-                                </select>
-                                <div class="invalid-feedback"></div>
-                            </div>
-                            <div class="mb-1">
-                                <label for="f-msg" class="form-label">Nội dung (10–300 ký tự)</label>
-                                <textarea id="f-msg" class="form-control" rows="4"></textarea>
-                                <div class="invalid-feedback"></div>
-                            </div>
-                            <p id="f-count" class="small text-muted-fg" aria-live="polite">Đã nhập 0/300 ký tự — chưa đủ tối thiểu 10.</p>
-                            <button class="btn btn-primary" type="submit">Gửi (xem trước)</button>
-                            <button id="f-sample" class="btn btn-accent" type="button">Dùng thử</button>
-                            <button class="btn btn-outline-primary" type="reset" id="f-reset">Đặt lại</button>
-                        </form>
-                        <p class="small text-muted-fg mt-3">Trang không có máy chủ: dữ liệu bạn nhập không được gửi đi hay lưu lại.</p>
+                        <h1>Gửi câu hỏi hoặc góp ý</h1>            
+<form id="contact-form" novalidate>
+    <div id="form-errors"
+         class="alert alert-danger d-none"
+         role="alert"
+         tabindex="-1"></div>
+    <div class="mb-3">
+        <label for="f-name" class="form-label">
+            Họ tên (có thể dùng biệt danh)
+        </label>
+        <input id="f-name"
+               type="text"
+               class="form-control"
+               autocomplete="off">
+        <div class="invalid-feedback"></div>
+    </div>
+    <div class="mb-3">
+        <label for="f-email" class="form-label">Email</label>
+        <input id="f-email"
+               type="email"
+               class="form-control"
+               autocomplete="off">
+        <div class="invalid-feedback"></div>
+    </div>
+    <div class="mb-3">
+        <label for="f-topic" class="form-label">Chủ đề</label>
+        <select id="f-topic" class="form-select">
+            <option value="">-- Chọn chủ đề --</option>
+            <option>Thủ tục nhập học</option>
+            <option>Học vụ - học bổng</option>
+            <option>Ký túc xá</option>
+            <option>Khác</option>
+        </select>
+        <div class="invalid-feedback"></div>
+    </div>
+    <div class="mb-1">
+        <label for="f-msg" class="form-label">
+            Nội dung (10–300 ký tự)
+        </label>
+        <textarea id="f-msg"
+                  class="form-control"
+                  rows="4"
+                  maxlength="300"></textarea>
+        <div class="invalid-feedback"></div>
+    </div>
+
+    <p id="f-count" class="small text-muted-fg" aria-live="polite">
+        Đã nhập 0/300 ký tự — chưa đủ tối thiểu 10.
+    </p>
+
+    <button class="btn btn-primary" type="submit">
+        Gửi (xem trước)
+    </button>
+    <button id="f-sample" class="btn btn-accent" type="button">
+        Dùng thử
+    </button>
+
+    <button class="btn btn-outline-primary" type="reset" id="f-reset">
+        Đặt lại
+    </button>
+    <div id="form-success"
+         class="alert alert-success d-none mt-3"
+         role="status"
+         aria-live="polite">
+        Gửi câu hỏi hoặc góp ý thành công!
+        Cảm ơn bạn đã đóng góp ý kiến.
+    </div>
+</form>
                     </div>
                     <div class="col-12 col-lg-5">
                         <div class="info-card">
@@ -97,7 +129,6 @@
                 </div>
             </div>
         </section>
-        <!-- Modal ... (đã rút gọn nhưng bạn giữ nguyên phần Modal ở HTML gốc) -->
     </main>
     <footer class="site-footer">
         <div class="container text-center">
